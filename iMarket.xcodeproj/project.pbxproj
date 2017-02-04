@@ -18,8 +18,8 @@
 		1D4CB2A61E4595AD008FF4B7 /* signUpTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB2A51E4595AD008FF4B7 /* signUpTwoViewController.swift */; };
 		1D4CB2A81E4595C7008FF4B7 /* signUpThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB2A71E4595C7008FF4B7 /* signUpThreeViewController.swift */; };
 		1D4CB2AA1E4595D9008FF4B7 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB2A91E4595D9008FF4B7 /* loginViewController.swift */; };
-		1D4CB2AC1E4595E9008FF4B7 /* Custom Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CB2AB1E4595E9008FF4B7 /* Custom Fonts */; };
-		1D4CB2AE1E45CE52008FF4B7 /* montserrat-2 in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CB2AD1E45CE52008FF4B7 /* montserrat-2 */; };
+		1DB6FD1C1E460570005C1A3C /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6FD1A1E460570005C1A3C /* Montserrat-Bold.ttf */; };
+		1DB6FD1D1E460570005C1A3C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6FD1B1E460570005C1A3C /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,8 @@
 		1D4CB2A51E4595AD008FF4B7 /* signUpTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpTwoViewController.swift; sourceTree = "<group>"; };
 		1D4CB2A71E4595C7008FF4B7 /* signUpThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpThreeViewController.swift; sourceTree = "<group>"; };
 		1D4CB2A91E4595D9008FF4B7 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
-		1D4CB2AB1E4595E9008FF4B7 /* Custom Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Custom Fonts"; sourceTree = "<group>"; };
-		1D4CB2AD1E45CE52008FF4B7 /* montserrat-2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "montserrat-2"; sourceTree = "<group>"; };
+		1DB6FD1A1E460570005C1A3C /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		1DB6FD1B1E460570005C1A3C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,7 @@
 		1D4CB2741E4593EF008FF4B7 /* iMarket */ = {
 			isa = PBXGroup;
 			children = (
-				1D4CB2AD1E45CE52008FF4B7 /* montserrat-2 */,
-				1D4CB2AB1E4595E9008FF4B7 /* Custom Fonts */,
+				1DB6FD191E460565005C1A3C /* fonts */,
 				1D4CB2751E4593EF008FF4B7 /* AppDelegate.swift */,
 				1D4CB2771E4593EF008FF4B7 /* ViewController.swift */,
 				1D4CB2791E4593EF008FF4B7 /* Main.storyboard */,
@@ -141,6 +140,15 @@
 				1D4CB2971E4593EF008FF4B7 /* Info.plist */,
 			);
 			path = iMarketUITests;
+			sourceTree = "<group>";
+		};
+		1DB6FD191E460565005C1A3C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1DB6FD1A1E460570005C1A3C /* Montserrat-Bold.ttf */,
+				1DB6FD1B1E460570005C1A3C /* Montserrat-Regular.ttf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,10 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB6FD1C1E460570005C1A3C /* Montserrat-Bold.ttf in Resources */,
 				1D4CB2801E4593EF008FF4B7 /* LaunchScreen.storyboard in Resources */,
-				1D4CB2AC1E4595E9008FF4B7 /* Custom Fonts in Resources */,
 				1D4CB27D1E4593EF008FF4B7 /* Assets.xcassets in Resources */,
-				1D4CB2AE1E45CE52008FF4B7 /* montserrat-2 in Resources */,
+				1DB6FD1D1E460570005C1A3C /* Montserrat-Regular.ttf in Resources */,
 				1D4CB27B1E4593EF008FF4B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +537,7 @@
 				1D4CB29C1E4593EF008FF4B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D4CB29D1E4593EF008FF4B7 /* Build configuration list for PBXNativeTarget "iMarketTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +546,7 @@
 				1D4CB29F1E4593EF008FF4B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D4CB2A01E4593EF008FF4B7 /* Build configuration list for PBXNativeTarget "iMarketUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +555,7 @@
 				1D4CB2A21E4593EF008FF4B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
