@@ -2,8 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>proxima-nova.otf</string>
+		<string>ProximaNovaExtrabold.otf</string>
+		<string>proxima-nova-th-extrabold.ttf</string>
+		<string>proxima-nova-bold.otf</string>
+		<string>proximanovaBold.otf</string>
+	</array>
+	<key>custom5</key>
+	<string>ProximaNovaExtrabold.otf</string>
+	<key>custom_font4</key>
+	<string>proxima-nova-th-extrabold.ttf</string>
+	<key>custom_font3</key>
+	<string>proxima-nova-bold.otf</string>
+	<key>custom_font2</key>
+	<string>proximanovaBold.otf</string>
+	<key>custom_font</key>
+	<string>proxima-nova.otf</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

@@ -14,6 +14,12 @@
 		1D4CB2801E4593EF008FF4B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CB27E1E4593EF008FF4B7 /* LaunchScreen.storyboard */; };
 		1D4CB28B1E4593EF008FF4B7 /* iMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB28A1E4593EF008FF4B7 /* iMarketTests.swift */; };
 		1D4CB2961E4593EF008FF4B7 /* iMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB2951E4593EF008FF4B7 /* iMarketUITests.swift */; };
+		1D4CB2A41E45959C008FF4B7 /* signUpOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB2A31E45959C008FF4B7 /* signUpOneViewController.swift */; };
+		1D4CB2A61E4595AD008FF4B7 /* signUpTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB2A51E4595AD008FF4B7 /* signUpTwoViewController.swift */; };
+		1D4CB2A81E4595C7008FF4B7 /* signUpThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB2A71E4595C7008FF4B7 /* signUpThreeViewController.swift */; };
+		1D4CB2AA1E4595D9008FF4B7 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CB2A91E4595D9008FF4B7 /* loginViewController.swift */; };
+		1D4CB2AC1E4595E9008FF4B7 /* Custom Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CB2AB1E4595E9008FF4B7 /* Custom Fonts */; };
+		1D4CB2AE1E45CE52008FF4B7 /* montserrat-2 in Resources */ = {isa = PBXBuildFile; fileRef = 1D4CB2AD1E45CE52008FF4B7 /* montserrat-2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		1D4CB2911E4593EF008FF4B7 /* iMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4CB2951E4593EF008FF4B7 /* iMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMarketUITests.swift; sourceTree = "<group>"; };
 		1D4CB2971E4593EF008FF4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D4CB2A31E45959C008FF4B7 /* signUpOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpOneViewController.swift; sourceTree = "<group>"; };
+		1D4CB2A51E4595AD008FF4B7 /* signUpTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpTwoViewController.swift; sourceTree = "<group>"; };
+		1D4CB2A71E4595C7008FF4B7 /* signUpThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpThreeViewController.swift; sourceTree = "<group>"; };
+		1D4CB2A91E4595D9008FF4B7 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		1D4CB2AB1E4595E9008FF4B7 /* Custom Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Custom Fonts"; sourceTree = "<group>"; };
+		1D4CB2AD1E45CE52008FF4B7 /* montserrat-2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "montserrat-2"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,18 @@
 		1D4CB2741E4593EF008FF4B7 /* iMarket */ = {
 			isa = PBXGroup;
 			children = (
+				1D4CB2AD1E45CE52008FF4B7 /* montserrat-2 */,
+				1D4CB2AB1E4595E9008FF4B7 /* Custom Fonts */,
 				1D4CB2751E4593EF008FF4B7 /* AppDelegate.swift */,
 				1D4CB2771E4593EF008FF4B7 /* ViewController.swift */,
 				1D4CB2791E4593EF008FF4B7 /* Main.storyboard */,
 				1D4CB27C1E4593EF008FF4B7 /* Assets.xcassets */,
 				1D4CB27E1E4593EF008FF4B7 /* LaunchScreen.storyboard */,
 				1D4CB2811E4593EF008FF4B7 /* Info.plist */,
+				1D4CB2A91E4595D9008FF4B7 /* loginViewController.swift */,
+				1D4CB2A31E45959C008FF4B7 /* signUpOneViewController.swift */,
+				1D4CB2A51E4595AD008FF4B7 /* signUpTwoViewController.swift */,
+				1D4CB2A71E4595C7008FF4B7 /* signUpThreeViewController.swift */,
 			);
 			path = iMarket;
 			sourceTree = "<group>";
@@ -233,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4CB2801E4593EF008FF4B7 /* LaunchScreen.storyboard in Resources */,
+				1D4CB2AC1E4595E9008FF4B7 /* Custom Fonts in Resources */,
 				1D4CB27D1E4593EF008FF4B7 /* Assets.xcassets in Resources */,
+				1D4CB2AE1E45CE52008FF4B7 /* montserrat-2 in Resources */,
 				1D4CB27B1E4593EF008FF4B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +281,10 @@
 			files = (
 				1D4CB2781E4593EF008FF4B7 /* ViewController.swift in Sources */,
 				1D4CB2761E4593EF008FF4B7 /* AppDelegate.swift in Sources */,
+				1D4CB2AA1E4595D9008FF4B7 /* loginViewController.swift in Sources */,
+				1D4CB2A81E4595C7008FF4B7 /* signUpThreeViewController.swift in Sources */,
+				1D4CB2A41E45959C008FF4B7 /* signUpOneViewController.swift in Sources */,
+				1D4CB2A61E4595AD008FF4B7 /* signUpTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
