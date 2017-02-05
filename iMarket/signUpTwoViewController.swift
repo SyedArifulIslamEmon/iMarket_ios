@@ -10,12 +10,14 @@ import UIKit
 
 class signUpTwoViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var btnImage: UIButton!
     @IBOutlet weak var tfFirstName: UITextField!
     @IBOutlet weak var tfLastName: UITextField!
     
     @IBOutlet weak var imgProfilePicture: UIImageView!
     @IBOutlet weak var btnFinish: UIButton!
     
+    var image:UIImage?
     var message1 = ""
     var emailText = String()
     
@@ -60,18 +62,8 @@ class signUpTwoViewController: UIViewController, UITextFieldDelegate, UIImagePic
     }
     
     
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
-    }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let selectedPhoto = info[UIImagePickerControllerOriginalImage] as! UIImage
-        imgProfilePicture.image = selectedPhoto
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-    
+    /*
     @IBAction func selectImageFromImageLibrary(_ sender: UITapGestureRecognizer) {
         
         let imagePickerController = UIImagePickerController()
@@ -80,7 +72,7 @@ class signUpTwoViewController: UIViewController, UITextFieldDelegate, UIImagePic
         present(imagePickerController, animated: true, completion: nil)
         
     }
-  
+  */
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
@@ -150,6 +142,7 @@ class signUpTwoViewController: UIViewController, UITextFieldDelegate, UIImagePic
             destViewController.labelTextOne = tfFirstName.text!
             destViewController.labelTextTwo = tfLastName.text!
             destViewController.labelTextThree = emailText
+            destViewController.imgImage = imgProfilePicture.image!
             
         }
     }
@@ -157,6 +150,37 @@ class signUpTwoViewController: UIViewController, UITextFieldDelegate, UIImagePic
     @IBAction func btnSignUpTwoBack(_ sender: Any) {
                 _ = self.navigationController?.popViewController(animated: true)
     }
+    
+    
+    
+    @IBAction func btnImageOperation(_ sender: AnyObject) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        
+        image.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true){}
+        
+        
+    }
+    
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+        imgProfilePicture.image = image
+        }
+        else{}
+        self.dismiss(animated: true, completion: nil)
+        }
+    
+    
+    
+    
+    
     
     @IBAction func btnFinishOperation(_ sender: Any) {
         
@@ -168,7 +192,7 @@ class signUpTwoViewController: UIViewController, UITextFieldDelegate, UIImagePic
         }
             
         else if tfLastName.text == "" {
-            message1 =  "Last Required"
+            message1 =  "Last Name Required"
             alertControllerr(_message: message1)
             btnFinish.isEnabled = false
         }

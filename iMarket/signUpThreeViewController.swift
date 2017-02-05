@@ -16,6 +16,10 @@ class signUpThreeViewController: UIViewController {
     
     @IBOutlet weak var labelEmail: UILabel!
     
+    @IBOutlet var imgImageView: UIImageView!
+    
+    var imgImage = UIImage()
+    
     var labelTextOne = String()
     
     var labelTextTwo = String()
@@ -25,9 +29,13 @@ class signUpThreeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        imgImageView.layer.cornerRadius = imgImageView.frame.size.width/3
+        imgImageView.clipsToBounds = true
+        
         labelFirstName.text = labelTextOne
         labelLastName.text = labelTextTwo
         labelEmail.text = labelTextThree
+        imgImageView.image = imgImage
         
     }
     
